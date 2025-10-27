@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #799a9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    color: #444444;
+    text-align: center;
+}
+
+.app-container {
+    background-color: #cccccc;
+    padding: 20px;
+    border: 8px solid #444444;
+    box-shadow: 10px 10px 0px 0px #444444;
+}
+
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #cc0000;
+}
+
+.message {
+    font-size: 0.8em;
+    height: 1.2em;
+}
+
+.timer-display {
+    margin: 30px 0;
+    padding: 10px;
+    background-color: #cccccc;
+    color: #00ff00;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cat Display Box - bigger, above timer */
+.cat-display {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Default state (idle) cat - shown before any timer starts */
+.cat-display.state-default {
+    background-image: url('cat-default.png');
+}
+
+/* State Classes for Cat Display during session */
+.cat-display.state-happy {
+    background-image: url('cat-happy.png');
+}
+.cat-display.state-focused {
+    background-image: url('cat-focused.png');
+}
+.cat-display.state-tired {
+    background-image: url('cat-dying.png');
+}
+.cat-display.state-break {
+    background-image: none;
+    background-color: #6a9c45;
+}
+
+/* Timer numbers style */
+#timer-numbers {
+    font-size: 3em;
+    font-family: 'Press Start 2P', cursive;
+    color: #00ff00;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.focus-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6em;
+    padding: 10px 15px;
+    background-color: #eeeeee;
+    border: 4px solid #444444;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    border-radius: 0;
+    box-shadow: 2px 2px 0px 0px #444444;
+}
+
+.focus-button:hover {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px 0px #444444;
+}
+
+.focus-button:active {
+    background-color: #dddddd;
+    box-shadow: 0px 0px 0px 0px #444444;
+    transform: translateY(2px) translateX(2px);
+}
+
+#reset-button {
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+    margin: 12px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #00cc00;
+    color: white;
+    border: 4px solid #444444;
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: 2px 2px 0px 0px #444444;
+    transition: background-color 0.1s, box-shadow 0.1s;
+}
+
+#reset-button:hover:not(:disabled) {
+    background-color: #00ff00;
+    box-shadow: 3px 3px 0px 0px #444444;
+}
+
+#reset-button:active:not(:disabled) {
+    box-shadow: 0px 0px 0px 0px #444444;
+    transform: translateY(2px) translateX(2px);
+}
+
+#reset-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    background-color: #cc0000 !important;
+    box-shadow: 0px 0px 0px 0px #444444;
+    transform: none;
+}
+
+
+

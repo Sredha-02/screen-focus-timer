@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Focus Timer (from me!)</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="app-container">
+        <h1>Perfect Focus Timer for You!</h1>
+        <p class="message" id="status-message">Choose your preferred focus time!</p>
+        
+        <div class="timer-display" id="timer-display">
+            <div class="cat-display" id="cat-display"></div>
+            <span id="timer-numbers">00:00</span>
+        </div>
+
+        <button id="reset-button" class="action-button">RESET</button> 
+
+        <div class="button-container">
+            <button class="focus-button" data-time="2700" id="short">45 Min Focus</button>
+            <button class="focus-button" data-time="3600" id="medium">60 Min Focus</button>
+            <button class="focus-button" data-time="5400" id="long">90 Min Focus</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
