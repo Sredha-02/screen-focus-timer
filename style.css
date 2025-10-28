@@ -79,7 +79,7 @@ h1 {
 #timer-numbers {
     font-size: 3em;
     font-family: 'Press Start 2P', cursive;
-    color: #410433; /* Dark for contrast */
+    color: #8a3006; /* Dark for contrast */
     background: none;
     border: none;
     padding: 0;
@@ -148,6 +148,7 @@ h1 {
     box-shadow: 0px 0px 0px 0px #444444;
     transform: none;
 }
+
 
 
 
